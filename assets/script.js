@@ -30,8 +30,11 @@ var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
 //     });
 // }
 
+var 
 function generatePassword (){
-  var userInput = prompt("How long would you like your password? Must be 8-128 characters.","Character Types: Would you like to include lower case? Y/N", "Character Types: Would you like to include Uppercase? Y/N?", "Character Types: Would you like to include numeric characters? Y/N?", "Character Types: Would you like to include special characters? Y/N?")
+  var userInput = prompt("How long would you like your password? Must be 8-128 characters."),
+  
+  var "Character Types: Would you like to include lower case? Y/N", "Character Types: Would you like to include Uppercase? Y/N?", "Character Types: Would you like to include numeric characters? Y/N?", "Character Types: Would you like to include special characters? Y/N?")
  
 }
 if (userInput <8) 
