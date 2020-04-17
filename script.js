@@ -17,11 +17,11 @@ function writePassword() {
 
 function generatePassword() {
   var password= "";
-  var pwdLength = Number(prompt("How long would you like your password to be?"));
+  var pwdLength = Number(prompt("How long would you like your password to be? Please choose between 8 and 128 characters."));
 
   while (isNaN(pwdLength) ||pwdLength <8 ||pwdLength >128) pwdLength = Number(prompt("You must choose a password length between 8 and 128. How long would you like your password to be?"));
 
-  var uppercase= confirm ("Would you liketo use uppercase letters?");
+  var uppercase= confirm ("Would you like to use uppercase letters?");
   var lowercase= confirm ("Would you like to use lower case letters?");
   var number = confirm ("Would you like to use numbers?");
   var symbol = confirm ("Would you like to include special characters?");
@@ -29,7 +29,7 @@ function generatePassword() {
 
   while (!uppercase && !lowercase && !number && !symbol){
     alert("You must choose at least ONE special character type!");
-    uppercase = confirm("Would you liketo use uppercase letters?");
+    uppercase = confirm("Would you like to use uppercase letters?");
     lowercase = confirm ("Would you like to use lower case letters?");
     number = confirm ("Would you like to use numbers?");
     symbol = confirm ("would you like to include special characters?");
