@@ -35,22 +35,42 @@ function generatePassword() {
     symbol = confirm ("would you like to include special characters?");
   }
 
-  var allowed = "";
+  var allowed = [];
+  var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowers = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = "0123456789";
+  var specials = "!@#$%^&*()";
+  var count = 0;
 
   if(uppercase) {
-  allowed += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  }
-  if(lowercase) {
-  allowed += "abcdefghijklmnopqrstuvwxyz";
-  }
-  if(number) {
-  allowed += "0123456789";
-  }
-  if (symbol) {
-  allowed += "!@#$%^&*()";
+  allowed += uppers;
+  password += uppers.charAt(Math.floor(Math.random()*uppers.length));
+  count++;
+  console.log(password);
   }
 
-  for (let  i=0; i < pwdLength; i++){
+  if(lowercase) {
+  allowed += lowers;
+  password += lowers.charAt(Math.floor(Math.random()*lowers.length));
+  count++;
+  console.log(password);
+  }
+
+  if(number) {
+  allowed += numbers;
+  password += numbers.charAt(Math.floor(Math.random()*number.length));
+  count++;
+  console.log(password);
+  }
+
+  if (symbol) {
+  allowed += specials;
+  password += numbers.charAt(Math.floor(Math.random() * specials.length));
+  count++;
+  console.log(password);
+  }
+
+  for (count; count < pwdLength; count++){
     password += allowed.charAt(Math.floor(Math.random()*allowed.length));
   }
     return password;

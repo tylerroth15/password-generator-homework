@@ -31,3 +31,7 @@ User questions 2-5 are treated as booleans and are followed up with another whil
 ### Allowed Varaibles 
 
 I then created the allowed varriable for each  boolean question [uppercase, lowercase, numbers and symbols]. This is followed by a for loop that takes the allowed vairables that meet the user input that met the requirements and applies the Math.floor and Math.random functions to create a random password. 
+
+#### Collaboration
+
+While working on this homework, I collaborated with Chris Enright and Micheal Spikes to brainstorm work arounds and walk through hangups that we had through this assignment. 
